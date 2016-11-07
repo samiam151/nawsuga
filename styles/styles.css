@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps");
+/*MAIN COLORS*/
+/*MIXINS*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  box-sizing: border-box; }
+
+h1, h2 {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  letter-spacing: 0.03em; }
+
+h2 {
+  padding: 20px 0 5px; }
+
+a {
+  color: initial;
+  text-decoration: none; }
+  a.button {
+    padding: 5px 10px;
+    background-color: #5499c7;
+    border: 1px solid #3980af;
+    border-radius: 3px;
+    color: ghostwhite;
+    cursor: pointer;
+    margin-right: 15px; }
+    a.button:hover {
+      background-color: #3980af; }
+
+.purchase {
+  text-align: center;
+  margin-top: 50px; }
+
+.bg-img {
+  background-image: url("../assets/fruit.jpg");
+  background-size: cover; }
+  .bg-img .layer {
+    background-color: rgba(74, 153, 199, 0.8);
+    min-height: 100vh;
+    padding: 65px 0; }
+
+.home-banner {
+  z-index: 50;
+  padding: 0 5%;
+  text-align: center; }
+  .home-banner .home-title {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    letter-spacing: 0.03em;
+    /*padding-top: 45px;*/
+    padding-bottom: 10px;
+    font-size: 10em;
+    color: white; }
+  .home-banner .home-subtitle {
+    font-size: 1.3em;
+    padding: 0 15%;
+    line-height: 1.8em;
+    color: white;
+    margin-bottom: 45px; }
+
+.choices {
+  text-align: center; }
+  .choices .home-choice {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1%;
+    display: inline-block;
+    border-radius: 3px; }
+    .choices .home-choice:hover {
+      background-color: #5499c7; }
+
+header {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1% 5%; }
+  header ul .nav-li {
+    display: inline-block;
+    margin-right: 2%; }
+    header ul .nav-li.nav-logo {
+      margin-right: 3%;
+      font-size: 1.5em; }
+      header ul .nav-li.nav-logo a {
+        font-family: 'Oleo Script Swash Caps', cursive;
+        letter-spacing: 0.03em;
+        color: #5499c7; }
+
+.ingredients {
+  margin: 0 auto;
+  width: 70%;
+  padding: 2%;
+  background-color: ghostwhite;
+  border-radius: 3px;
+  border: 3px solid black;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3); }
+  .ingredients .chooseIngredients .selectAll {
+    display: block;
+    margin: 20px 0; }
+  .ingredients .chooseIngredients a.button {
+    padding: 5px 10px;
+    background-color: #5499c7;
+    border: 1px solid #3980af;
+    border-radius: 3px;
+    color: ghostwhite;
+    cursor: pointer;
+    margin-right: 15px;
+    text-align: center; }
+    .ingredients .chooseIngredients a.button:hover {
+      background-color: #3980af; }
+  .ingredients .chooseIngredients .checkboxes {
+    margin-bottom: 25px; }
+
+.returnRecipe {
+  margin: 0 auto;
+  width: 70%;
+  padding: 2%;
+  background-color: ghostwhite;
+  border-radius: 3px;
+  border: 3px solid black;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3); }
+  .returnRecipe .returnrecipe-header {
+    margin-bottom: 25px; }
+    .returnRecipe .returnrecipe-header .head {
+      width: 65%;
+      display: inline-block; }
+    .returnRecipe .returnrecipe-header .img {
+      width: 35%;
+      display: inline-block;
+      margin-left: -5px;
+      float: right; }
+      .returnRecipe .returnrecipe-header .img img {
+        width: 100%; }
+    .returnRecipe .returnrecipe-header .return-recipe li {
+      margin-left: 30px; }
+
+.purchaseIndex {
+  margin: 0 auto;
+  width: 70%;
+  padding: 2%;
+  background-color: ghostwhite;
+  border-radius: 3px;
+  border: 3px solid black;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+  font-size: 2.5em;
+  text-align: center; }
+
+.show-recipe {
+  margin: 0 auto;
+  width: 70%;
+  padding: 2%;
+  background-color: ghostwhite;
+  border-radius: 3px;
+  border: 3px solid black;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3); }
+  .show-recipe .choose-recipe {
+    margin-top: 15px; }
+    .show-recipe .choose-recipe li {
+      margin-left: 50px; }
+      .show-recipe .choose-recipe li:hover a {
+        color: #5499c7; }

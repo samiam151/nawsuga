@@ -1,0 +1,22 @@
+header {
+    background-color: rgba(255,255,255, 0.6);
+    padding: 1% 5%;
+
+    ul {
+        .nav-li {
+            display: inline-block;
+            margin-right: 2%;
+
+            &.nav-logo {
+                margin-right: 3%;
+                font-size: 1.5em;
+
+                a {
+                    @include oleo;
+                    color: $blue;
+                }
+                
+            }
+        }
+    }
+}

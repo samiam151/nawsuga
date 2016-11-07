@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li class="nav-li nav-logo"><a href="index.html">NawSuga</a></li>
+            <li class="nav-li"><a href="ingredients.html">Ingredients</a></li>
+            <li class="nav-li"><a href="recipe.html">Recipes</a></li>
+        </ul>
+    </header>
+
+    <div class="bg-img">
+        <div class="layer">
+            
+            <div class="ingredients">
+                <div class="instructions">
+                    <h1>Choose You Ingredients</h1>
+                    <p>NawSuga's ingredients are pre-sorted for a diabetic-friendly diet. Input your preferred ingredients to get a list of recipes.</p>
+                </div>
+                
+                <div class="chooseIngredients">
+                    <div class="selectAll">
+                        <input type="checkbox" id="selectAll" value="second_checkbox"><label for="selectAll">Select All</label>
+                    </div>
+                    
+                    <div class="checkboxes">
+                        <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Elbow Macaroni</label><br>
+                        <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Butter</label><br>
+                        <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Milk</label><br>
+                        <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Cheese</label><br>
+                        <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Flour</label><br>
+                    </div>
+                    
+
+                    <a href="mac-n-cheese.html" class="button">Get Recipes</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+        (function($){
+            var $selectAll = $('.selectAll');
+
+            $selectAll.on('click', function(e){
+                console.log("test");
+
+                e.preventDefault();
+                e.stopPropagation();
+                var bool = false;
+                $('input[type="checkbox"]:not("#selectAll")').each(function(i, item){
+                    $(item).prop("checked", !bool);
+                });
+            });
+        }(jQuery));
+    </script>
+</body>
+</html>

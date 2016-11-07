@@ -1,0 +1,46 @@
+.bg-img {
+    background-image: url("../assets/fruit.jpg");
+    background-size: cover;
+
+    .layer {
+        background-color: $blue_overlay;
+        min-height: 100vh;
+        padding: 65px 0;
+    }
+}
+
+.home-banner {
+    z-index: 50;
+    padding: 0 5%;
+    text-align: center;
+
+    .home-title {
+        @include oleo;
+        /*padding-top: 45px;*/
+        padding-bottom: 10px;
+        font-size: 10em;
+        color: white;
+    }
+
+    .home-subtitle {
+        font-size: 1.3em;
+        padding: 0 15%;
+        line-height: 1.8em;
+        color: $main_text_color;
+        margin-bottom: 45px; 
+    }
+}
+
+.choices {
+    text-align: center;
+    .home-choice {
+        background-color: rgba(255,255,255,0.9);
+        padding: 1%;
+        display: inline-block;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+}

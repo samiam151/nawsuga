@@ -1,0 +1,15 @@
+.show-recipe {
+    @include panel;
+
+    .choose-recipe {
+        margin-top: 15px;
+
+        li {
+            margin-left: 50px;
+
+            &:hover a {
+                color: $blue;
+            }
+        }
+    }
+}
